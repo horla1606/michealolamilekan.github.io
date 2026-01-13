@@ -581,4 +581,123 @@
                         </div>
                         <div class="skill-level">
                             <div class="skill-progress" style="width: 90%"></div>
-                        <
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Statistical Analysis</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Data Storytelling</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p style="max-width: 600px; margin: 20px auto 50px; font-size: 1.1rem; opacity: 0.9;">
+                I'm actively seeking data analyst opportunities where I can contribute to data-driven 
+                decision making and business growth. Let's discuss how I can add value to your team.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <p>michealolamilekan101@gmail.com</p>
+                    <a href="mailto:michealolamilekan101@gmail.com" 
+                       class="btn btn-primary" style="margin-top: 20px; background: white; color: var(--dark);">
+                        Send Message
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Professional Network</p>
+                    <a href="https://linkedin.com/in/samson-micheal-olamilekan" 
+                       class="btn btn-primary" style="margin-top: 20px; background: white; color: var(--dark);" target="_blank">
+                        Connect
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fab fa-github contact-icon"></i>
+                    <h3>GitHub</h3>
+                    <p>Projects & Code</p>
+                    <a href="https://github.com/horla1606" 
+                       class="btn btn-primary" style="margin-top: 20px; background: white; color: var(--dark);" target="_blank">
+                        View Portfolio
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fab fa-medium contact-icon"></i>
+                    <h3>Medium</h3>
+                    <p>Data Articles</p>
+                    <a href="https://medium.com/@horla1" 
+                       class="btn btn-primary" style="margin-top: 20px; background: white; color: var(--dark);" target="_blank">
+                        Read Articles
+                    </a>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; max-width: 500px; margin: 60px auto 0;">
+                <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Lagos, Nigeria</p>
+                <p><i class="fas fa-phone" style="margin-right: 10px;"></i> +234 813 746 5431</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Michael Olamilekan Samson. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">
+                Built with HTML, CSS, and hosted on GitHub Pages
+            </p>
+            <div style="margin-top: 20px;">
+                <a href="https://github.com/horla1606" style="color: #94a3b8; margin: 0 15px; font-size: 1.2rem;" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/samson-micheal-olamilekan" style="color: #94a3b8; margin: 0 15px; font-size: 1.2rem;" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://medium.com/@horla1" style="color: #94a3b8; margin: 0 15px; font-size: 1.2rem;" target="_blank">
+                    <i class="fab fa-medium"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for skill bars
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.transition = 'width 1.5s ease-in-out';
+                    bar.style.width = width;
+                }, 300);
+            });
+        });
+    </script>
+</body>
+                </html>
